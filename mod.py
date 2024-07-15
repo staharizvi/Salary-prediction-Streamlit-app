@@ -5,6 +5,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import RandomForestRegressor
 import pickle
 
+# Define functions for data processing and model training
 def readDf(path):
     df = pd.read_csv(path)
     df = df.drop(columns=['FIRST NAME', 'LAST NAME'])
@@ -59,6 +60,7 @@ def train_model(OH_X_train, y_train):
     model.fit(OH_X_train, y_train)
     return model
 
+# Retrain and save the model
 if __name__ == "__main__":
     path = 'Salary Prediction of Data Professions.csv'
     X, y = featTar(typeCast(readDf(path)))
