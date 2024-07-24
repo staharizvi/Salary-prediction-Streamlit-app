@@ -15,7 +15,7 @@ This repository contains a Streamlit application for predicting salaries based o
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/taharizvi-ai/Salary-predition-Streamlit-app.git
+    git clone https://github.com/taharizvi-ai/Salary-prediction-Streamlit-app.git
     cd salary-prediction-app
     ```
 
